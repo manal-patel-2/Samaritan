@@ -1,33 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_width="416dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="642dp"
+            android:background="#CF6A6A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="417dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="6dp"
+            android:background="#CF6A6A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-20dp" />
 
-    <include layout="@layout/content_main" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/plus_white"
+            tools:layout_editor_absoluteX="329dp"
+            tools:layout_editor_absoluteY="24dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/menu_white"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="24dp" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="311dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="24dp"
+            android:text="SAMARITAN"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/home_white"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="660dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/user_white"
+            tools:layout_editor_absoluteX="340dp"
+            tools:layout_editor_absoluteY="658dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/heartHandshake_white"
+            tools:layout_editor_absoluteX="178dp"
+            tools:layout_editor_absoluteY="660dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/tags_white"
+            tools:layout_editor_absoluteX="266dp"
+            tools:layout_editor_absoluteY="660dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#CF6A6A"
+            app:srcCompat="@drawable/bell_white"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="660dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
