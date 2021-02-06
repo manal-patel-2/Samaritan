@@ -19,15 +19,15 @@ public class StorageManager {
     The user will also have a file that contains all their blips on the server so they can retrieve
     it whenever they need to or if the cache is deleted.
      */
-    private LinkedList<Blip> userBlipList = new LinkedList<>();
+    //private LinkedList<Blip> userBlipList = new LinkedList<>();
     //[user id][email][name][age][occupation][biography]
     //private String[] userProfile = new String[6]; //contains user data
     private Profile userProfile = new Profile();
 
-    public boolean addUserBlip(Blip blip) {
+    /*public boolean addUserBlip(Blip blip) {
         userBlipList.add(blip);
         return true;
-    }
+    }*/
 
     public boolean addBlip(Blip blip) {
         blipList.add(blip);
