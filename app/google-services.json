@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "473991471782",
+    "firebase_url": "https://samaritan-1a21d-default-rtdb.firebaseio.com",
+    "project_id": "samaritan-1a21d",
+    "storage_bucket": "samaritan-1a21d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473991471782:android:b052b82a59fd705caa8a67",
+        "android_client_info": {
+          "package_name": "com.motivatedmind.samaritan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473991471782-ikvm97a3r31kt5ug9apaserld4iqe0qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnqh9UaNixy9jN1NzODNoXfC6os9l1OeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473991471782-ikvm97a3r31kt5ug9apaserld4iqe0qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
