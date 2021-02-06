@@ -22,7 +22,7 @@ public class StorageManager {
     //private LinkedList<Blip> userBlipList = new LinkedList<>();
     //[user id][email][name][age][occupation][biography]
     //private String[] userProfile = new String[6]; //contains user data
-    private Profile userProfile = new Profile();
+    private Profile userProfile;
 
     /*public boolean addUserBlip(Blip blip) {
         userBlipList.add(blip);
@@ -36,6 +36,11 @@ public class StorageManager {
 
     public boolean addTag(Tag tag) {
         tagList.add(tag);
+        return true;
+    }
+
+    public boolean addUserProfile(Profile userProfile) {
+        this.userProfile = userProfile;
         return true;
     }
 }
