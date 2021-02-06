@@ -1,39 +1,24 @@
 package com.motivatedmind.samaritan;
 
 import android.media.Image;
+import android.os.Bundle;
+import android.widget.Button;
 
-public class Profile {
-    String name;
-    String age;
-    String occupation; //job, education etc.
-    String biography;
-    Image profilePicture;
+import androidx.appcompat.app.AppCompatActivity;
 
-    public Profile(String name, String age, String occupation, String biography, Image profilePicture) {
-        this.name = name;
-        this.age = age;
-        this.occupation = occupation;
-        this.biography = biography;
-        this.profilePicture = profilePicture;
+public class Profile extends AppCompatActivity {
+
+    User user;
+    Button updateProfile;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView();     Wait for Bhargavi to finish Profile and assign her xml file to this .java file
+
+        //user = new User();    Create setter methods for user class and a default constructor.
+
+
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public Image getProfilePicture() {
-        return profilePicture;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public String getBiography() {
-        return biography;
-    }
-
-    public String getOccupation() {
-        return occupation;
-    }
 }

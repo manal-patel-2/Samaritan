@@ -1,5 +1,6 @@
 package com.motivatedmind.samaritan;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -15,10 +16,15 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
     String TAG = "MainActivity";
+    ImageButton home;
+    protected FirebaseDatabase database;
+    protected DatabaseReference myRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("message");
 
         myRef.setValue("Hello World");
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+        home = findViewById(R.id.imageButton5);
+       /** FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
 
             }
-        });
+        });*/
     }
 
     @Override
