@@ -6,6 +6,17 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="occupation">Occupation:</string>
+    <string name="pets">Pets:</string>
+    <string name="name_here">Your Name Here</string>
+    <string name="age_here">Your Age Here</string>
+    <string name="job_here">Your Job Here</string>
+    <string name="hobbies_etc">Hobbies, or anything else
+        you'd like to share:</string>
+
+
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
